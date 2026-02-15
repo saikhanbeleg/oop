@@ -46,11 +46,10 @@ class Game:
             print("you won")
         else:
             print("computer won")
-if __name__ == "__main__":
+game = Game()
+game.play()
+
+play_again = input("Play again (y,n) ")
+if play_again == "y":
     game = Game()
     game.play()
-    
-    play_again = input("Play again (y,n) ")
-    if play_again == "y":
-        game = Game()
-        game.play()
